@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Подробности о рецепте {{ recipe.title }}
+{% endblock %}
+
+{% block content %}
+
+   <h1>{{ recipe.title }}</h1>
+    <p>{{ recipe.description }}</p>
+    <p>Ингредиенты: {{ recipe.ingredients }}</p>
+    <p>Инструкции: {{ recipe.instructions }}</p>
+
+    <a href="{% url 'index' %}">Назад к списку рецептов</a>
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
